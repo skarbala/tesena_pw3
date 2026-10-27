@@ -34,6 +34,3 @@ test("investment details are correctly stored", async ({ page }) => {
   await expect(investmentList).toBeVisible();
   await expect(investmentList.locator("li").locator("h4")).toContainText(name);
 });
-
-//samostatne: vytiahnite do konstanty nazov fondu a pouzite ho v teste
-//const name = "Harry";

@@ -6,7 +6,7 @@ test.beforeEach("open page", async ({ page }) => {
 
 test("display quote on button click", async ({ page }) => {
   await page.getByRole("button", { name: "Get Quote" }).click();
-  await expect(page.locator("ul.quote-list").locator("li")).toBeVisible();
+  await expect(page.locator("ul.quote-lis").locator("li")).toBeVisible();
 });
 
 test("heading should have correct text", async ({ page }) => {
